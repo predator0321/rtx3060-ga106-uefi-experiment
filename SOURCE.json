@@ -1,0 +1,28 @@
+{
+  "port": "RTX 3060 12GB GA106 experimental Linux port",
+  "version": "0.2.0-experimental",
+  "target_pci_id": "10de:2504",
+  "upstream": {
+    "url": "https://github.com/IHaBiS02/ga107-unlock",
+    "commit": "5e6b3600bb01142891d43d62120727e96911d1a6"
+  },
+  "original": {
+    "url": "https://github.com/Zagitta/gpu-unlock",
+    "commit": "0ebdb1c6308b6a2072be5bf04513472942541956"
+  },
+  "hardware_execution_tested": false,
+  "windows_unlock_implemented": "experimental UEFI adapter 0.3.1; single-system user observations documented in README.md",
+  "windows_handoff_tested": false,
+  "validation_context": {
+    "original_hardware_execution_tested_field": "Historical Linux-port development status; not the later Windows observation",
+    "windows_single_system_observation": true,
+    "observation_dates_kst": [
+      "2026-10-19",
+      "2026-10-20"
+    ],
+    "evidence": "User-provided logs and benchmark output summarized in README.md and results/measurement-summary.json",
+    "independent_hardware_retest_by_packager": false,
+    "linux_module_hardware_validation": "not established by the Windows UEFI test",
+    "binary_distribution": "source-only; build and stage prebuilt files as documented in docs/BUILD.md"
+  }
+}

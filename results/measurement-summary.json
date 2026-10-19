@@ -1,0 +1,56 @@
+{
+  "provenance": "Manually transcribed summary of user-provided console output, not original raw benchmark JSON or workflow files",
+  "environment": {
+    "gpu": "RTX 3060 12GB",
+    "ram_gb": 32,
+    "model": "Anima",
+    "resolution": [
+      1024,
+      1536
+    ],
+    "sampler": "euler_ancestral",
+    "scheduler": "simple",
+    "steps": 30,
+    "cfg": 5.0
+  },
+  "anima_total_seconds": {
+    "stock_fp16_accumulation_on": [
+      58.07,
+      57.31,
+      57.5
+    ],
+    "unlock_fp16_accumulation_on": [
+      57.84,
+      57.83,
+      57.4
+    ],
+    "stock_fp16_accumulation_off": [
+      68.45,
+      68.64,
+      68.5
+    ],
+    "unlock_fp16_accumulation_off": [
+      47.54,
+      47.3,
+      47.35
+    ]
+  },
+  "tensor_tflops": {
+    "stock": {
+      "FP16": 25.744512883664623,
+      "BF16": 25.941557342450334
+    },
+    "unlock": {
+      "FP16": 47.58394398215227,
+      "BF16": 47.97945486429966
+    },
+    "unlock_recheck": {
+      "FP16": 47.61013335374171,
+      "BF16": 48.39468089232666
+    }
+  },
+  "model_file_hash": null,
+  "model_dtype": null,
+  "fixed_seed_parity_confirmed": false,
+  "ssd_post_install_performance_retested": false
+}
